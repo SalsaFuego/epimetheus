@@ -1,0 +1,120 @@
+// Custom variables
+@import "variables";
+
+// Navbar Styles
+.nav-item {
+	font-family: $secondary-font;
+	font-size: 1.25rem;
+	letter-spacing: .05rem;
+}
+#nav-list {
+	width: 100%;
+}
+#salsa-fuego-logo {
+	margin: 0 auto;
+	width: 140px;
+}
+	#salsa-fuego-logo img {
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+#sombrero-tio {
+	margin: .5rem auto;
+	width: 65px;
+}
+	#sombrero-tio img {
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+
+
+
+// Torn Effect Styles
+.feature:nth-of-type(1) {
+	background-color: $salsa-fuego-red-light;
+}
+	.feature:nth-of-type(1) .torn-paper-background-image {
+		background-image: url('http://via.placeholder.com/2500x1250/0000ff/ffffff');
+	}
+.feature:nth-of-type(2) {
+	background-color: $salsa-fuego-orange-light;
+}
+	.feature:nth-of-type(2) .torn-paper-background-image {
+		background-image: url('http://via.placeholder.com/2500x1250/f47b3d/ffffff');
+	}
+.feature:nth-of-type(3) {
+	background-color: $salsa-fuego-yellow-light;
+}
+	.feature:nth-of-type(3) .torn-paper-background-image {
+		background-image: url('http://via.placeholder.com/2500x1250/ffc63e/ffffff');
+	}
+.feature:nth-of-type(4) {
+	background-color: $salsa-fuego-green-light;
+}
+	.feature:nth-of-type(4) .torn-paper-background-image {
+		background-image: url('http://via.placeholder.com/2500x1250/5b9d7a/ffffff');
+	}
+.feature:nth-of-type(5) {
+	background-color: $salsa-fuego-red-light;
+}
+	.feature:nth-of-type(5) .torn-paper-background-image {
+		background-image: url('http://via.placeholder.com/2500x1250/c5342f/ffffff');
+	}
+.torn-paper-background-image {
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center top;
+	width: 100%;
+}
+.torn-paper-effect {
+	width: 100%;
+}
+.torn-paper-svg {
+	width: 100%;
+}
+	.torn-paper-svg * {
+		fill: inherit;
+	}
+
+
+
+// Footer Styles
+footer > .container {
+	background-color: $salsa-fuego-tan;
+}
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+  margin: 0 0 .5rem;
+}
+footer p {
+	font-size: .75rem;
+	margin: 0;
+}
+
+
+
+// Shrinking navbar effect
+@keyframes shrinking_tio {
+  0% {
+    height: auto;
+    margin: .5rem auto;
+    width: 65px;
+  }
+  99% {
+    height: auto;
+    margin: 0 auto;
+    width: 0;
+  }
+  100% {
+    height: 0;
+    margin: 0 auto;
+    width: 0;
+  }
+}
+
+#sombrero-tio {
+  animation-name: shrinking_tio;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
