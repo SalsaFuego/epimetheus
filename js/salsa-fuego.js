@@ -32,3 +32,16 @@ window.onresize = function() {
 		sizeDiv()
 
 }
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+	const sombrero_tio = document.querySelector('#sombrero-tio');
+	sombrero_tio.style.animationPlayState = 'paused';
+	document.querySelector('#shrinking_tio').onclick = () => {
+		if (sombrero_tio.style.animationPlayState = 'paused')
+			sombrero_tio.style.animationPlayState = 'running';
+		else
+			sombrero_tio.style.animationPlayState = 'paused';
+	};
+});

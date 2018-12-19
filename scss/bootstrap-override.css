@@ -10554,8 +10554,8 @@ button.bg-dark:focus {
 
 .btn-secondary:hover {
   color: #fffef9;
-  background-color: #76499d;
-  border-color: #76499d;
+  background-color: #a288bf;
+  border-color: #a288bf;
 }
 
 .btn-secondary:focus, .btn-secondary.focus {
@@ -10564,15 +10564,15 @@ button.bg-dark:focus {
 
 .btn-secondary.disabled, .btn-secondary:disabled {
   color: #fffef9;
-  background-color: rgba(118, 73, 157, 0.25);
-  border-color: rgba(118, 73, 157, 0.25);
+  background-color: rgba(162, 136, 191, 0.25);
+  border-color: rgba(162, 136, 191, 0.25);
 }
 
 .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-secondary.dropdown-toggle {
   color: #fffef9;
-  background-color: #76499d;
-  border-color: #76499d;
+  background-color: #a288bf;
+  border-color: #a288bf;
 }
 
 .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
@@ -10596,19 +10596,19 @@ button.bg-dark:focus {
 }
 
 .btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
-  color: rgba(118, 73, 157, 0.25);
+  color: rgba(162, 136, 191, 0.25);
 }
 
 .btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-secondary.dropdown-toggle {
   color: #fffef9;
-  background-color: #76499d;
-  border-color: #76499d;
+  background-color: #a288bf;
+  border-color: #a288bf;
 }
 
 .btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-secondary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(118, 73, 157, 0.5);
 }
 
 .btn-success {

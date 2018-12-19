@@ -102,4 +102,27 @@ footer p {
   margin: 0;
 }
 
+@keyframes shrinking_tio {
+  0% {
+    height: auto;
+    margin: 0.5rem auto;
+    width: 65px;
+  }
+  99% {
+    height: auto;
+    margin: 0 auto;
+    width: 0;
+  }
+  100% {
+    height: 0;
+    margin: 0 auto;
+    width: 0;
+  }
+}
+#sombrero-tio {
+  animation-name: shrinking_tio;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
 /*# sourceMappingURL=salsa-fuego.css.map */

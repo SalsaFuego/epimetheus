@@ -201,8 +201,8 @@ button.bg-dark:focus {
 
 .btn-secondary:hover {
 	color: rgba($salsa-fuego-white, 1.0);
-	background-color: rgba($salsa-fuego-purple-dark, 1.0);
-	border-color: rgba($salsa-fuego-purple-dark, 1.0);
+	background-color: rgba($salsa-fuego-purple-light, 1.0);
+	border-color: rgba($salsa-fuego-purple-light, 1.0);
 }
 
 .btn-secondary:focus, .btn-secondary.focus {
@@ -211,15 +211,15 @@ button.bg-dark:focus {
 
 .btn-secondary.disabled, .btn-secondary:disabled {
 	color: rgba($salsa-fuego-white, 1.0);
-	background-color: rgba($salsa-fuego-purple-dark, 0.25);
-	border-color: rgba($salsa-fuego-purple-dark, 0.25);
+	background-color: rgba($salsa-fuego-purple-light, 0.25);
+	border-color: rgba($salsa-fuego-purple-light, 0.25);
 }
 
 .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-secondary.dropdown-toggle {
 	color: rgba($salsa-fuego-white, 1.0);
-	background-color: rgba($salsa-fuego-purple-dark, 1.0);
-	border-color: rgba($salsa-fuego-purple-dark, 1.0);
+	background-color: rgba($salsa-fuego-purple-light, 1.0);
+	border-color: rgba($salsa-fuego-purple-light, 1.0);
 }
 
 .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
@@ -243,19 +243,19 @@ button.bg-dark:focus {
 }
 
 .btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
-	color: rgba($salsa-fuego-purple-dark, 0.25);
+	color: rgba($salsa-fuego-purple-light, 0.25);
 }
 
 .btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-secondary.dropdown-toggle {
 	color: rgba($salsa-fuego-white, 1.0);
-	background-color: rgba($salsa-fuego-purple-dark, 1.0);
-	border-color: rgba($salsa-fuego-purple-dark, 1.0);
+	background-color: rgba($salsa-fuego-purple-light, 1.0);
+	border-color: rgba($salsa-fuego-purple-light, 1.0);
 }
 
 .btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-secondary.dropdown-toggle:focus {
-	box-shadow: 0 0 0 0.2rem rgba($salsa-fuego-gray-light, 0.5);
+	box-shadow: 0 0 0 0.2rem rgba($salsa-fuego-purple-dark, 0.5);
 }
 
 
