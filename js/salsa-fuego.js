@@ -1,32 +1,5 @@
 window.onload = function() {
 
-	// shrinking-navbar-effect.js
-	// ##########################
-
-		// Define sombreroTio and assign value of ''
-			var sombreroTio = '';
-
-		// Define salsaFuegoLogo and assign value of ''
-			var salsaFuegoLogo = '';
-
-		// Define sombreroTioWidthProperty and assign value of ''
-			var sombreroTioWidthProperty = '';
-
-		// Define sombreroTioHeightProperty and assign value of ''
-			var sombreroTioHeightProperty = '';
-
-		// Define sombreroTioPaddingBottomProperty and assign value of ''
-			var sombreroTioPaddingBottomProperty = '';
-
-		// Define salsaFuegoLogoWidthProperty and assign value of ''
-			var salsaFuegoLogoWidthProperty = '';
-
-		// Define salsaFuegoLogoHeightProperty and assign value of ''
-			var salsaFuegoLogoHeightProperty = '';
-
-		// Call the sombreroTioInitialize() function
-			sombreroTioInitialize()
-
 	// torn-paper-effect.js
 	// ####################
 
@@ -46,12 +19,6 @@ window.onload = function() {
 		// Call sizeDiv() function
 			sizeDiv()
 
-	// spotlight-content.js
-	// ####################
-
-		// Call sizeDiv() function
-			spotlightContent()
-
 }
 
 
@@ -63,17 +30,5 @@ window.onresize = function() {
 
 	// Call sizeDiv() function
 		sizeDiv()
-
-}
-
-
-
-window.onscroll = function() {
-
-	// Call the sombreroTioSeesaw() function
-		sombreroTioSeesaw()
-
-	// Call the fontSize() function
-		fontSize()
 
 }

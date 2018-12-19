@@ -1,25 +1,9 @@
-/*
- * Copyright 2018 Salsa Fuego, LLC
- */
+// Custom variables
+@import "variables";
 
-
-
-/* Google Fonts */
-.font-family-source-sans-pro {
-	font-family: 'Source Sans Pro', sans-serif;
-}
-.font-family-bevan {
-	font-family: 'Bevan', cursive;
-}
-.font-family-rye {
-	font-family: 'Rye', cursive;
-}
-
-
-
-/* Navbar Styles */
+// Navbar Styles
 .nav-item {
-	font-family: 'Bevan', cursive;
+	font-family: $secondary-font;
 	font-size: 1.25rem;
 	letter-spacing: .05rem;
 }
@@ -47,33 +31,33 @@
 
 
 
-/* Torn Effect Styles */
+// Torn Effect Styles
 .feature:nth-of-type(1) {
-	background-color: rgb(197, 52, 47);
+	background-color: $salsa-fuego-red-light;
 }
 	.feature:nth-of-type(1) .torn-paper-background-image {
 		background-image: url('http://via.placeholder.com/2500x1250/0000ff/ffffff');
 	}
 .feature:nth-of-type(2) {
-	background-color: rgb(244, 123, 61);
+	background-color: $salsa-fuego-orange-light;
 }
 	.feature:nth-of-type(2) .torn-paper-background-image {
 		background-image: url('http://via.placeholder.com/2500x1250/f47b3d/ffffff');
 	}
 .feature:nth-of-type(3) {
-	background-color: rgb(255, 198, 62);
+	background-color: $salsa-fuego-yellow-light;
 }
 	.feature:nth-of-type(3) .torn-paper-background-image {
 		background-image: url('http://via.placeholder.com/2500x1250/ffc63e/ffffff');
 	}
 .feature:nth-of-type(4) {
-	background-color: rgb(91, 157, 122);
+	background-color: $salsa-fuego-green-light;
 }
 	.feature:nth-of-type(4) .torn-paper-background-image {
 		background-image: url('http://via.placeholder.com/2500x1250/5b9d7a/ffffff');
 	}
 .feature:nth-of-type(5) {
-	background-color: rgb(197, 52, 47);
+	background-color: $salsa-fuego-red-light;
 }
 	.feature:nth-of-type(5) .torn-paper-background-image {
 		background-image: url('http://via.placeholder.com/2500x1250/c5342f/ffffff');
@@ -91,17 +75,14 @@
 	width: 100%;
 }
 	.torn-paper-svg * {
-		fill: #00ff00;
+		fill: inherit;
 	}
-.mrah:nth-child(2) {
-	background-color: #ff0000;
-}
 
 
 
-/* Footer Styles */
+// Footer Styles
 footer > .container {
-	background-color: rgb(224, 187, 127);
+	background-color: $salsa-fuego-tan;
 }
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
   margin: 0 0 .5rem;
@@ -109,23 +90,4 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
 footer p {
 	font-size: .75rem;
 	margin: 0;
-}
-
-
-
-/* Spotlight Content Styles */
-.spotlight-content {
-	margin-bottom: 5rem;
-}
-.spotlight-content > .col-4 {
-	overflow: scroll;
-	padding: .5rem 1rem;
-	vertical-align: middle;
-}
-
-
-
-/* Three Column Content Styles */
-.three-column-content {
-	/* STYLES GO HERE */
 }
