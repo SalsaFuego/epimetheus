@@ -104,41 +104,47 @@ function tearPaper() {
 				// console.log('svgCoordinates:');
 				// console.log(svgCoordinates);
 
-			// Use Snap.svg JavaScript library to create new drawing surface out of tornPaperSvg[i] 
+			// Use Snap.svg JavaScript library to create new drawing surface out of tornPaperSvg[i]
 				var svg = Snap(tornPaperSvg[i]);
 
-			// Draw a polygon using the X Y coordinates from the svgCoordinates array
-				if (i % 4 == 0) {
+			// Draw a polygon using the X Y coordinates from the svgCoordinates array and define a fill color
+				let tornPaperModulo = i % 4;
+				if (tornPaperModulo == 0) {
 					var tornPaperFill = svg.polygon(svgCoordinates).attr({
-						fill: 'rgb(197, 52, 47)'
+						fill: '#c5342f'
 					});
-				} else if (i % 4 == 1) {
+				}
+				else if (tornPaperModulo == 1) {
 					var tornPaperFill = svg.polygon(svgCoordinates).attr({
-						fill: 'rgb(244, 123, 61)'
+						fill: '#f47b3d'
 					});
-				} else if (i % 4 == 2) {
+				}
+				else if (tornPaperModulo == 2) {
 					var tornPaperFill = svg.polygon(svgCoordinates).attr({
-						fill: 'rgb(255, 198, 62)'
+						fill: '#5b9d7a'
 					});
-				} else if (i % 4 == 3) {
+				}
+				else {
 					var tornPaperFill = svg.polygon(svgCoordinates).attr({
-						fill: 'rgb(91, 157, 122)'
+						fill: '#ffc63e'
 					});
-				} else {
-					var tornPaperFill = svg.polygon(svgCoordinates);
 				}
 
 			// Use the backgroundColor property to set the background color of tornPaperSvg[i]
 				if (i == tornPaperSvg.length - 1) {
-					tornPaperSvg[i].style.backgroundColor = 'rgb(224, 187, 127)'
-				} else if (i % 4 == 0) {
-					tornPaperSvg[i].style.backgroundColor = 'rgb(244, 123, 61)'
-				} else if (i % 4 == 1) {
-					tornPaperSvg[i].style.backgroundColor = 'rgb(255, 198, 62)'
-				} else if (i % 4 == 2) {
-					tornPaperSvg[i].style.backgroundColor = 'rgb(91, 157, 122)'
-				} else if (i % 4 == 3) {
-					tornPaperSvg[i].style.backgroundColor = 'rgb(197, 52, 47)'
+					tornPaperSvg[i].style.backgroundColor = '#e0bb7f'
+				}
+				else if (tornPaperModulo == 0) {
+						tornPaperSvg[i].style.backgroundColor = '#f47b3d'
+					}
+				else if (tornPaperModulo == 1) {
+					tornPaperSvg[i].style.backgroundColor = '#5b9d7a'
+				}
+				else if (tornPaperModulo == 2) {
+					tornPaperSvg[i].style.backgroundColor = '#ffc63e'
+				}
+				else {
+					tornPaperSvg[i].style.backgroundColor = '#c5342f'
 				}
 
 		}
@@ -290,7 +296,7 @@ function retearPaper() {
 						// console.log('yRatio:');
 						// console.log(yRatio);
 
-					// Add xRatio and yRatio values to svgRatios array 
+					// Add xRatio and yRatio values to svgRatios array
 						svgRatios.push(xRatio + ' ' + yRatio);
 						// console.log('svgRatios:');
 						// console.log(svgRatios);
@@ -344,7 +350,7 @@ function retearPaper() {
 						// console.log('yCoordinate:');
 						// console.log(yCoordinate);
 
-					// Add xCoordinate and yCoordinate values to newSVGCoordinates array 
+					// Add xCoordinate and yCoordinate values to newSVGCoordinates array
 						newSVGCoordinates.push(xCoordinate + ' ' + yCoordinate);
 						// console.log('newSVGCoordinates:');
 						// console.log(newSVGCoordinates);
@@ -353,28 +359,30 @@ function retearPaper() {
 				// console.log('newSVGCoordinates:');
 				// console.log(newSVGCoordinates);
 
-			// Use Snap.svg JavaScript library to create new drawing surface out of tornPaperSvg[i] 
+			// Use Snap.svg JavaScript library to create new drawing surface out of tornPaperSvg[i]
 				var svg = Snap(tornPaperSvg[i]);
 
-			// Draw a polygon using the X Y coordinates from the newSVGCoordinates array
-				if (i % 4 == 0) {
+			// Draw a polygon using the X Y coordinates from the newSVGCoordinates array and define a fill color
+				let tornPaperModulo = i % 4;
+				if (tornPaperModulo == 0) {
 					var tornPaperFill = svg.polygon(newSVGCoordinates).attr({
-						fill: 'rgb(197, 52, 47)'
+						fill: '#c5342f'
 					});
-				} else if (i % 4 == 1) {
+				}
+				else if (tornPaperModulo == 1) {
 					var tornPaperFill = svg.polygon(newSVGCoordinates).attr({
-						fill: 'rgb(244, 123, 61)'
+						fill: '#f47b3d'
 					});
-				} else if (i % 4 == 2) {
+				}
+				else if (tornPaperModulo == 2) {
 					var tornPaperFill = svg.polygon(newSVGCoordinates).attr({
-						fill: 'rgb(255, 198, 62)'
+						fill: '#5b9d7a'
 					});
-				} else if (i % 4 == 3) {
+				}
+				else {
 					var tornPaperFill = svg.polygon(newSVGCoordinates).attr({
-						fill: 'rgb(91, 157, 122)'
+						fill: '#ffc63e'
 					});
-				} else {
-					var tornPaperFill = svg.polygon(newSVGCoordinates);
 				}
 
 		}
