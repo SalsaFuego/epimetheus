@@ -33,15 +33,26 @@ window.onresize = function() {
 
 }
 
-
-
 document.addEventListener('DOMContentLoaded', () => {
-	const sombrero_tio = document.querySelector('#sombrero-tio');
-	sombrero_tio.style.animationPlayState = 'paused';
-	document.querySelector('#shrinking_tio').onclick = () => {
-		if (sombrero_tio.style.animationPlayState = 'paused')
-			sombrero_tio.style.animationPlayState = 'running';
-		else
-			sombrero_tio.style.animationPlayState = 'paused';
+	// Add all <section class="full-width"> elements to fullWidthSections
+	let fullWidthSections = document.querySelectorAll('section.full-width');
+	console.log(fullWidthSections);
+
+	// Loop through fullWidthSections and {{do stuff...}}
+	for (i = 0; i < fullWidthSections.length; i++) {
+
+		if (i % 4 == 0) {
+			fullWidthSections[i].style.backgroundColor = '#c5342f';
+		}
+		else if (i % 4 == 1) {
+			fullWidthSections[i].style.backgroundColor = '#f47b3d';
+		}
+		else if (i % 4 == 2) {
+			fullWidthSections[i].style.backgroundColor = '#5b9d7a';
+		}
+		else {
+			fullWidthSections[i].style.backgroundColor = '#ffc63e';
+		}
+
 	};
 });
